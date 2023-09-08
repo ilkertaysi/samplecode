@@ -2,6 +2,10 @@ project = "nomad-nodejs"
 
 app "nomad-nodejs-web" {
 
+  url {
+    auto_hostname = true
+  }
+
   build {
     use "pack" {}
     registry {
